@@ -10,5 +10,4 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 app = ApplicationBuilder().token(TOKEN).build()
 app.add_handler(CommandHandler("start", start))
 
-if __name__ == "__main__":
-    app.run_polling()
+app.run_polling()
